@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETFLIX CLONE</title>
+    <title>Anos90Flix</title>
     <link rel="stylesheet" href="style/main.css">
 
     <!--responsivo css-->
@@ -12,39 +12,41 @@
     <!--owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav>
+            
         </div>
     </header>
 
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo"> The Walking Dead: Origins</h3>
-                <p class="descricao">O spin-off explorará a história do apocalipse zumbi 
-                    do ponto de vista de Maggie, Carol, Daryl e Negan. Além disso, 
-                    The Walking Dead: Origins vai contar com entrevistas e narrações dos 
-                    atores que interpretam os personagens, intercalados com cenas dos 
-                    momentos mais importantes de cada um deles até agora.
+                <h2 class="logo">Anos90Flix</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Recomendados</a>
+                <a href="#">Clássicos</a>
+                <a href="#">Mais visto</a>
+            </nav>
+                <h3 class="titulo"> Timão e Pumba</h3>
+                <p class="descricao">A série é estrelada por Timão, um suricato, e Pumba, 
+                    um javali, ambos personagens do filme "O Rei Leão". Situada após os 
+                    eventos do filme original, a série envolve os personagens tendo 
+                    desventuras na selva e em diferentes países, como Canadá, Grã-Bretanha,
+                     Estados Unidos e Espanha.
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <a href="#assistir" class="botao">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
+                    </a>
+                    <a href="#mais-info" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -85,6 +87,32 @@
         </div>
     </div>
 
+    <div id="assistir" class="modal">
+        <div class="container">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <h2>Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NjKxZ_UC-7c"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>        
+    </div>
+
+    <div id="mais-info" class="modal">
+        <div class="container">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <h2> Timão e Pumba</h2>
+            <img src="img/capa.jpg" class="img-modal">
+            <p> <b>Sinopse:</b> <em>A</em> série é estrelada por Timão, um suricato, e Pumba, 
+                um javali, ambos personagens do filme "O Rei Leão". Situada após os 
+                eventos do filme original, a série envolve os personagens tendo 
+                desventuras na selva e em diferentes países, como Canadá, Grã-Bretanha,
+                Estados Unidos e Espanha.
+            </p>            
+            <p> <b>Classificação:</b> Família, Animação, Comédia.</p>
+            <p><b>Ano de lançamento:</b> 1995.</p>
+        
+        </div>
+    </div>
+
+       
     <script src="https://kit.fontawesome.com/0779db44c4.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
